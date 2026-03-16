@@ -30,7 +30,7 @@ find_package(cv_bridge REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 add_executable(go2_h264_repub src/go2_h264_repub.cpp)
-ament_target_dependencies(go2_h264_repub rclcpp sensor_msgs cv_bridge)
+ament_target_dependencies(go2_h264_repub rclcpp sensor_msgs cv_bridge OpenCV)
 target_link_libraries(go2_h264_repub ${OpenCV_LIBRARIES})
 
 install(TARGETS
